@@ -39,3 +39,5 @@ DOES IT WORK WITH EVERYONE?
 ## Let them write the polynomial
 
 ## Let them write the hubbard hamiltonian
+
+## save data in txt (highfive later)

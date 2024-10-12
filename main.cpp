@@ -227,5 +227,25 @@ int main(int argc, char** argv)
 
     std::cout << also_car_pointer.use_count() << std::endl;
 
+    // save data to file
+
+        // Sample vector of complex numbers
+    std::vector<std::complex<double>> complex_vector = {
+        {1, 2}, {3, 4}, {5, -6}
+    };
+
+    // Write to a CSV file
+    std::ofstream file("complex_numbers.csv");
+    if (file.is_open()) {
+        file << "Real,Imaginary\n";  // Optional header
+        for (const auto& c : complex_vector) {
+            file << c.real() << "," << c.imag() << "\n";
+        }
+        file.close();
+    } else {
+        std::cerr << "Unable to open file";
+    }
+
+
     return 0;
 }
